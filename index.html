@@ -91,7 +91,15 @@
 
   .cta { background: var(--olive); color: var(--paper); text-align: center; }
   .cta p { margin: 0 0 24px; font-size: 22px; }
-  .cta .also { margin: 28px 0 0; font-size: 17px; opacity: .85; }
+  .cta .also { margin: 48px 0 0; font-size: 17px; opacity: .85; }
+  .cta h2 { color: var(--gold); }
+  .stores { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: 32px 48px; text-align: left; margin: 56px 0 0; }
+  .stores h3 { font-family: Oswald, sans-serif; font-weight: 500; text-transform: uppercase; letter-spacing: .12em; color: var(--gold); font-size: 15px; margin: 0 0 16px; padding-bottom: 8px; border-bottom: 1px solid rgba(201,162,74,.4); }
+  .stores ul { list-style: none; margin: 0; padding: 0; }
+  .stores li { margin: 0 0 20px; font-size: 16px; line-height: 1.5; }
+  .stores li b { display: block; font-weight: 600; }
+  .stores li a, .stores li span { display: block; color: rgba(245,241,232,.75); text-decoration-color: rgba(201,162,74,.5); }
+  .instore { margin-left: 20px; font-size: 16px; opacity: .8; }
 
   footer { background: var(--olive-deep); color: rgba(245,241,232,.6); font-size: 14px; padding: 24px 0; text-align: center; }
 
@@ -99,6 +107,7 @@
     .hero { padding: 48px 0 56px; }
     .hero .wrap { grid-template-columns: 1fr; gap: 32px; text-align: center; }
     .cover { max-width: 220px; margin: 0 auto; display: block; }
+    .instore { display: block; margin: 16px 0 0; }
     section { padding: 52px 0; }
     .lead { font-size: 21px; }
   }
@@ -115,6 +124,7 @@
       <p class="sub">The relationship of Torah and IDF service through the lens of Chazal</p>
       <p class="by">by Moshe Klausner</p>
       <a class="btn" href="https://www.amazon.com/dp/B0HJM9JTSR">Buy on Amazon</a>
+      <a class="instore" href="#where-to-buy">or find it in stores in Israel ↓</a>
     </div>
   </div>
 </header>
@@ -186,12 +196,57 @@
     </div></div>
   </section>
 
-  <section class="cta">
+  <section class="cta" id="where-to-buy">
     <div class="wrap">
+      <h2>Where to buy</h2>
       <p>Get your copy of <em>Torah and the Army</em>.</p>
       <a class="btn" href="https://www.amazon.com/dp/B0HJM9JTSR">Buy on Amazon</a>
-      <p class="also">Also available directly from the author and at bookstores in Beit Shemesh and Jerusalem.<br>
-        Contact: <a href="mailto:Moshe@torahandarmy.org">Moshe@torahandarmy.org</a></p>
+
+      <div class="stores">
+        <div>
+          <h3>Jerusalem</h3>
+          <ul>
+            <li><b>Pomeranz Bookseller</b>
+              <a href="https://www.google.com/maps/search/?api=1&amp;query=Pomeranz+Bookseller+5+Be%27eri+St+Jerusalem">5 Be’eri St</a>
+              <a href="tel:+97226235559">02-623-5559</a>
+              <a href="https://pomeranzbooks.co.il/he/shop/9798895917664-torah-and-the-army-the-relationship-of-torah-and-idf-service-through-the-lens-of-chazal-88778">Order online</a></li>
+            <li><b>Chavruta Books</b>
+              <a href="https://www.google.com/maps/search/?api=1&amp;query=Chavruta+Books+16+Halamed+Hei+Jerusalem">16 Halamed Hei</a>
+              <a href="tel:+97225667695">02-566-7695</a>
+              <a href="https://havrutabooks.co.il/">havrutabooks.co.il</a></li>
+            <li><b>Sefer Ve Sefel</b>
+              <a href="https://www.google.com/maps/search/?api=1&amp;query=Sefer+Ve+Sefel+2+Yavetz+St+Jerusalem">2 Yavetz St</a>
+              <a href="tel:+97226248237">02-624-8237</a></li>
+            <li><b>Moriah Books and Judaica</b>
+              <a href="https://www.google.com/maps/search/?api=1&amp;query=Moriah+Books+40+Misgav+Ladach+Jerusalem">40 Misgav Ladach</a>
+              <a href="tel:+97226285267">02-628-5267</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Beit Shemesh</h3>
+          <ul>
+            <li><b>From the author</b>
+              <a href="mailto:Moshe@torahandarmy.org">Moshe@torahandarmy.org</a></li>
+            <li><b>Michael Rose / Judaica Book Centre</b>
+              <span>Delivers within Beit Shemesh</span>
+              <a href="tel:+972504598212">050-459-8212</a></li>
+            <li><b>Judaica Center</b>
+              <a href="https://www.google.com/maps/search/?api=1&amp;query=Judaica+Center+Nachal+Arugot+23+Beit+Shemesh">Nachal Arugot St 23, Ramat Beit Shemesh Alef</a>
+              <a href="tel:+97229919069">02-991-9069</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Efrat</h3>
+          <ul>
+            <li><b>Hagut Judaica</b>
+              <a href="https://www.google.com/maps/search/?api=1&amp;query=Hagut+Judaica+Efrat">2 Zeit Shemesh, Efrat Center</a>
+              <a href="tel:+972587425461">058-742-5461</a>
+              <a href="https://hagut.co.il/">hagut.co.il</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="also">Contact the author:<a href="mailto:Moshe@torahandarmy.org">Moshe@torahandarmy.org</a></p>
     </div>
   </section>
 </main>
