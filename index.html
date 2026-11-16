@@ -66,6 +66,10 @@
   .by { margin: 0 0 30px; opacity: .75; }
   .btn { display: inline-block; background: var(--gold); color: var(--olive-deep); text-decoration: none; font-family: Oswald, sans-serif; font-weight: 500; text-transform: uppercase; letter-spacing: .1em; padding: 14px 28px; border-radius: 2px; transition: background .15s; }
   .btn:hover, .btn:focus-visible { background: #dbb65e; }
+  .btn.alt { background: transparent; color: var(--paper); box-shadow: inset 0 0 0 1px var(--gold); }
+  .btn.alt:hover, .btn.alt:focus-visible { background: rgba(201,162,74,.15); }
+  .buy { display: flex; flex-wrap: wrap; gap: 12px; }
+  .buy-note { margin: 16px 0 0; font-size: 16px; opacity: .8; }
 
   section { padding: 72px 0; }
   h2 { font-family: Oswald, sans-serif; font-weight: 500; text-transform: uppercase; letter-spacing: .12em; font-size: 15px; color: var(--muted); margin: 0 0 20px; }
@@ -99,7 +103,8 @@
   .stores li { margin: 0 0 20px; font-size: 16px; line-height: 1.5; }
   .stores li b { display: block; font-weight: 600; }
   .stores li a, .stores li span { display: block; color: rgba(245,241,232,.75); text-decoration-color: rgba(201,162,74,.5); }
-  .instore { margin-left: 20px; font-size: 16px; opacity: .8; }
+  .cta .buy { justify-content: center; }
+  .cta .buy-note { margin: 16px 0 0; font-size: 16px; }
 
   footer { background: var(--olive-deep); color: rgba(245,241,232,.6); font-size: 14px; padding: 24px 0; text-align: center; }
 
@@ -107,7 +112,7 @@
     .hero { padding: 48px 0 56px; }
     .hero .wrap { grid-template-columns: 1fr; gap: 32px; text-align: center; }
     .cover { max-width: 220px; margin: 0 auto; display: block; }
-    .instore { display: block; margin: 16px 0 0; }
+    .buy { justify-content: center; }
     section { padding: 52px 0; }
     .lead { font-size: 21px; }
   }
@@ -123,8 +128,11 @@
       <h1>Torah <span>and the</span> Army</h1>
       <p class="sub">The relationship of Torah and IDF service through the lens of Chazal</p>
       <p class="by">by Moshe Klausner</p>
-      <a class="btn" href="https://www.amazon.com/dp/B0HJM9JTSR">Buy on Amazon</a>
-      <a class="instore" href="#where-to-buy">or find it in stores in Israel ↓</a>
+      <div class="buy">
+        <a class="btn" href="https://pomeranzbooks.co.il/he/shop/9798895917664-torah-and-the-army-the-relationship-of-torah-and-idf-service-through-the-lens-of-chazal-88778">Order in Israel</a>
+        <a class="btn alt" href="https://www.amazon.com/dp/B0HJM9JTSR">Buy on Amazon</a>
+      </div>
+      <p class="buy-note">In Israel, Pomeranz Booksellers ships to your home. Or <a href="#where-to-buy">find it in a store ↓</a></p>
     </div>
   </div>
 </header>
@@ -200,7 +208,11 @@
     <div class="wrap">
       <h2>Where to buy</h2>
       <p>Get your copy of <em>Torah and the Army</em>.</p>
-      <a class="btn" href="https://www.amazon.com/dp/B0HJM9JTSR">Buy on Amazon</a>
+      <div class="buy">
+        <a class="btn" href="https://pomeranzbooks.co.il/he/shop/9798895917664-torah-and-the-army-the-relationship-of-torah-and-idf-service-through-the-lens-of-chazal-88778">Order in Israel</a>
+        <a class="btn alt" href="https://www.amazon.com/dp/B0HJM9JTSR">Buy on Amazon</a>
+      </div>
+      <p class="buy-note">Israel orders ship to your home from Pomeranz Booksellers. Amazon is best outside Israel.</p>
 
       <div class="stores">
         <div>
@@ -220,6 +232,8 @@
             <li><b>Moriah Books and Judaica</b>
               <a href="https://www.google.com/maps/search/?api=1&amp;query=Moriah+Books+40+Misgav+Ladach+Jerusalem">40 Misgav Ladach</a>
               <a href="tel:+97226285267">02-628-5267</a></li>
+            <li><b>Geula Avenue Bookstore</b>
+              <a href="https://www.google.com/maps/search/?api=1&amp;query=Geula+Avenue+Bookstore+3+Malchei+Yisrael+Jerusalem">3 Malchei Yisrael</a></li>
           </ul>
         </div>
         <div>
